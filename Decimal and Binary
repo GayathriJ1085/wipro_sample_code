@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class binary {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        int count = 0;
+        String binary = "";
+
+        while (a > 0) {
+            int reminder = a%2;
+            binary = reminder + binary;
+            a = a/2;
+        }
+        System.out.println(binary);
+    }
+}
